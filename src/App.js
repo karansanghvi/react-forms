@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Dropdown from './components/Dropdown';
+import HandlingForms from './components/HandlingForms';
+import MultipleInputs from './components/MultipleInputs';
+import RadioButton from './components/RadioButton';
+import SubmittingForms from './components/SubmittingForms';
+import Textarea from './components/Textarea';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* handling forms */}
+        <HandlingForms/>
+      {/* submitting forms */}
+        <SubmittingForms/>
+      {/* handling multiple inputs */}
+        <MultipleInputs/>
+      {/* textarea */}
+        <Textarea/>
+      {/* dropdown */}
+        <Dropdown/>
+      {/* radio button */}
+        <RadioButton/>
     </div>
   );
 }
